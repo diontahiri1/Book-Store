@@ -1,0 +1,326 @@
+body{
+    background-color: #F5F5F5;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  
+  /*header-----------------------------------------------------*/
+  
+  .container {
+    position: relative;
+    margin-top: 100px;
+    
+  }
+  .container img {
+    display: block;
+    width: 100%;
+  }
+  nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 80px;
+    background-color: #001F3F;
+    padding: 0 5%;
+  
+  }
+  nav .logo { 
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #F5F5F5;
+  }
+  nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav .links li {
+    list-style: none;
+  }
+  nav .links a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    color: #F5F5F5;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  nav .links a img{
+    height: 20px;
+  }
+  
+  nav .links a:hover {
+    color: #F5F5F5;
+  }
+  nav .links a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F5F5F5;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  nav .links a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    color: #F5F5F5;
+  }
+  #nav-toggle {
+     position: absolute;
+     top: -100px;
+  }
+  nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #F5F5F5;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+  }
+  
+
+  /*-------------new products----------------------------------------------------------------------------*/
+
+main .header{
+    font-family: 'Courier New', Courier, monospace;
+    width: 98%;
+    height: 60px;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+main .header h2{
+    color: #001F3F !important;
+  }
+  
+.header p span {
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #001F3F;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+  }
+  
+.header p span:hover {
+    color: #EAE8AA;
+  }
+  
+  
+  
+section {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+  }
+  
+section::-webkit-scrollbar {
+    display: none;
+  }
+  
+section .product {
+    min-width: 24%;
+    height: 90%;
+    background: #ffffff;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    box-shadow: 0 0 15px #ccc;
+  
+  }
+  
+picture {
+    width: 100%;
+    height: 70%;
+    padding-top: 20px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+picture img {
+    width: 70%;
+    margin: auto;
+    align-self: center;
+  }
+  
+.detail,
+.button {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: #001F3F;
+  }
+  
+small {
+    color: #001F3F;
+  }
+  
+section a {
+    text-decoration: none;
+    padding: 6px 14px;
+    font-size: 15px;
+    margin: 5px 0 0 20px;
+    display: inline-block;
+    background: #001F3F;
+    color: #F5F5F5;
+    border-radius: 4px;
+  }
+  
+p.star {
+    font-size: 20px;
+    color: #EAE8AA;
+  }
+  
+
+/*-----Footer-----------------------------------------------------------------------*/
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    background-color: #001F3F;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  footer img {
+      width: 15px;
+  }
+
+/*responsive----------------------------------------------------------------*/
+
+  @media screen and (max-width: 768px) {
+    body{
+      margin: auto;
+      overflow-x: hidden;
+    }
+    nav .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 80px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #eae8aaf2;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    nav .links a {
+        font-size: 26px;
+    }
+    nav :checked ~ .links {
+        bottom: 0;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked ~ .icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+  
+  
+    /*------------top products-------------------------------*/
+  
+    .text h1 {
+          font-size: 35px;
+      }
+  
+      .text p {
+          width: 90%;
+      }
+  
+      header h1 {
+          font-size: 25px;
+      }
+  
+      header p span {
+          font-size: 30px;
+      }
+  
+      section .product {
+          min-width: 49%;
+          margin: 0 10px 0 0;
+      }
+  
+      .detail,
+      .button {
+          font-size: 16px;
+      }
+  
+      a {
+          padding: 6px 10px;
+      }
+  
+  
+  }
+  
+  
+  
+  @media (max-width: 500px) {
+      section .product {
+          min-width: 100%;
+          margin: 0 10px 0 0;
+      }
+  
+  }
