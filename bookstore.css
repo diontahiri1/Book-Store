@@ -473,8 +473,6 @@ h3, p {
 
 /*==================PRODUCTS=============================================================*/
 
- 
-
 /*-----------search bar---------*/
 .search {
   width: 100%;
@@ -578,6 +576,7 @@ h3, p {
 }
 
 
+/*================login================================================*/
 
 /*----login-------------*/
 
@@ -597,6 +596,44 @@ h3, p {
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+}
+
+.btn {
+  height: 60px;
+  width: 300px;
+  margin: 20px auto;
+  border: solid;
+  border-color:  #EAE8AA;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login, .signup {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  height: 60px;
+  width: 150px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #EAE8AA , #c4c27d);
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  transition: all 0.5s ease-in-out;
+}
+
+.moveslider {
+  left: 250px;
 }
 
 
@@ -693,6 +730,7 @@ h3, p {
         transition: all .5s ease-in-out;
     }
     nav .links a {
+        color: #001F3F;
         font-size: 26px;
     }
     nav :checked ~ .links {
@@ -758,6 +796,64 @@ h3, p {
           padding: 6px 10px;
       }
   
+
+      /*------login--------------------------*/
+
+  .container-form {
+    height: 600px;
+    width: 300px;
+    margin-bottom: 500px;
+}
+
+.title {
+    font-size: 15px;
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.login, .signup {
+    font-size: 19px;
+}
+
+.slider {
+    height: 50px;
+    width: 100px;
+    left: 50px;
+}
+
+.moveslider {
+    left: 150px;
+}
+
+.form-section {
+    height: 500px;
+    width: 600px;
+}
+
+.form-section-move {
+    left: -300px;
+}
+
+.login-box, .signup-box {
+    height: 100%;
+    width: 300px;
+}
+
+.ele {
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+}
+
+.clkbtn {
+    height: 50px;
+    width: 130px;
+    font-size: 19px;
+}
   
   }
   
@@ -767,6 +863,11 @@ h3, p {
       section .product {
           min-width: 100%;
           margin: 0 10px 0 0;
+      }
+
+      .loc1 {
+        flex: 1 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
       }
   
   }

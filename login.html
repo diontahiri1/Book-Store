@@ -29,8 +29,14 @@
 <main>
   <main class="loginMain">
  
-        
     <div class="container-form">
+      <!-----butoni-------------->
+      <div class="slider"></div>
+        <div class="btn">
+            <button class="login" onclick="toggleForm('login')">Login</button>
+            <button class="signup" onclick="toggleForm('signup')">Signup</button>
+        </div>
+
         <!-----forms-------------------------------->
         <div class="form-section">
             <!------------login form-------------->
@@ -42,8 +48,18 @@
                 </form>
             </div>
 
-        </div>
         <!-----signup form--------------->
+
+        <div class="signup-box">
+          <form id="registerForm">
+              <input type="text" class="name ele" placeholder="Enter your name" id="registerName">
+              <input type="email" class="email ele" placeholder="youremail@email.com" id="registerEmail">
+              <input type="password" class="password ele" placeholder="password" id="registerPassword">
+              <input type="password" class="password ele" placeholder="Confirm password" id="registerConfirmPassword">
+              <button class="clkbtn" onclick="validateRegistration()">Signup</button>
+          </form>
+      </div>
+    </div>
 </div>
   
 </main>
